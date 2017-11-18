@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="source/assets/dest/css/animate.css">
 	<link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
 	<link rel="stylesheet" href="viewbox/viewbox.css">
+	<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a103b59ada42c0012910183&product=sticky-share-buttons"></script>
 </head>
 <body>
     @include('header')
@@ -41,7 +42,6 @@
 	<script src="source/assets/dest/js/custom2.js"></script>
 	<!--viewBox-->
 	<script src="viewbox/jquery.viewbox.min.js"></script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a10046d88cebc4c"></script> 
 	<script>
 	$(document).ready(function($) {    
 		$(window).scroll(function(){
