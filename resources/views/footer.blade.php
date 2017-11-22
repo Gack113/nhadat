@@ -14,7 +14,6 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-				 <div class="col-sm-10">
 					<div class="widget">
 						<h4 class="widget-title">Liên hệ chúng tôi</h4>
 						<div>
@@ -27,7 +26,6 @@
 							</div>
 						</div>
 					</div>
-				  </div>
 				</div>
 				<div class="col-sm-4">
 					<div class="widget">
@@ -35,8 +33,8 @@
 						<form action="#" method="post">
 							<input type="text" name="your_name" style="width:150px;" placeholder="Nhập vào tên..">
 							<input type="text" name="your_phone" style="width:200px;" placeholder="Nhập vào số điện thoại..">
-							<button class="pull-right" type="submit">OK<i class="fa fa-chevron-right"></i></button>
 						</form>
+						<button class="pull-right" type="submit">OK<i class="fa fa-chevron-right"></i></button>
 					</div>
 				</div>
 			</div> <!-- .row -->

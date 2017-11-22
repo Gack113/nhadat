@@ -40,10 +40,8 @@
 						<div class="form-block">
 							<textarea name="your-message" placeholder="Tin nhắn"></textarea>
 						</div>
-						<div class="form-block">
-							<button type="submit" class="beta-btn primary">Gửi tin nhắn <i class="fa fa-chevron-right"></i></button>
-						</div>
 					</form>
+					<button type="submit" class="beta-btn primary">Gửi tin nhắn <i class="fa fa-chevron-right"></i></button>
 				</div>
 				<div class="col-sm-4">
 					<h2>Thông Tin Liên Lạc</h2>

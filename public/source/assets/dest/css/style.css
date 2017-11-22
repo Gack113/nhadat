@@ -1576,7 +1576,9 @@ z-index:100;
 background:#fff;
 border:1px solid #e1e1e1;
 padding:0 10px 10px;
-cursor:default
+cursor:default;
+width: 345px;
+
 }
 
 .cart-item {
