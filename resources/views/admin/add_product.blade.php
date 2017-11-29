@@ -25,8 +25,9 @@
         <label class="col-md-2 col-form-label" for="loai">Loại</label>
         <div class="col-md-10">
             <select class="form-control" id="loai" name="loai">
-                <option selected>Nhà</option>
-                <option >Đất</option>
+                @foreach($type as $item)
+                    <option>{{$item->name}}</option>
+                @endforeach
             </select>
         </div>
     </div>

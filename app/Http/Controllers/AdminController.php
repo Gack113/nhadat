@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\ProductImage;
 use App\ProductView;
+use App\ProductType;
 use Image;
 use Storage;
 use Auth;
@@ -25,7 +26,8 @@ class AdminController extends Controller
     }
 
     public function add_product(){
-        return view('admin.add_product');
+        $type = ProductType::all();
+        return view('admin.add_product',compact('type'));
     }
 
     public function add_product_submit(Request $req){
@@ -33,7 +35,7 @@ class AdminController extends Controller
         [   
             'tieude'=>'required',
             'loai'=>'required',
-            'gia'=>'required',
+            'gia'=>'required|numeric',
             'diadiem'=>'required',
             'mota'=>'required',
             'feature_image'=>'required'
@@ -42,6 +44,7 @@ class AdminController extends Controller
             'tieude.required'=>'Vui lòng nhập tiêu đề',
             'loai.required'=>'Chọn 1 trong 2(nhà hoặc đất)',
             'gia.required'=>'Vui lòng nhập giá',
+            'gia.numeric'=>'Giá vui lòng là số',
             'diadiem.required'=>'Vui lòng nhập địa điểm',
             'mota.required'=>'Chưa nhập mô tả',
             'feature_image.required'=>'Chọn ít nhất 1 hình ảnh'
@@ -49,7 +52,8 @@ class AdminController extends Controller
         ]);
         $product = new Product;
         $product->name = $req->tieude;
-        $product->id_type = $req->loai == "Nhà"?1:2;
+        $loai = ProductType::where('name',$req->loai)->first();
+        $product->id_type = $loai->id;
         $product->unit = $req->loai == "Nhà"?"Căn":"Mảnh";
         $product->promotion_price = 0;
         $product->unit_price = $req->gia;
