@@ -1,0 +1,11 @@
+# HTID:2253271: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2253271:
+# Prevent directory listing
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule ^$ public/    [L]
+   RewriteRule (.*) public/$1 [L]
+</IfModule>
