@@ -30,7 +30,7 @@ class AdUserController extends Controller
             
             'username'=>'required',
             'password'=>'required',
-            //'g-recaptcha-response' => 'required|captcha'
+            'g-recaptcha-response' => 'required|captcha'
         ],
         [
             'username.required'=>'Vui lòng nhập tên tài khoản',

@@ -33,7 +33,7 @@
 				<input class="form-control" type="password" id="password" name="password">
 			</div>
 			<input class="btn btn-primary" type="submit" value="Đăng Nhập">
-			<!-- @captcha() -->
+			@captcha()
 		</form>
 	</div>
 	<div class="col-md-4"></div>
